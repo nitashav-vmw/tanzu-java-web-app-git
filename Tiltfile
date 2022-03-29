@@ -2,7 +2,7 @@
 os.putenv("GOOGLE_APPLICATION_CREDENTIALS", "/Users/nitashav/Documents/TAP-AE-Bootcamp/corby-gcp-sq.json")
 allow_k8s_contexts('tap-workshop')
 
-SOURCE_IMAGE = 'nitashav/tanzu-java-web-app'
+SOURCE_IMAGE = 'nitashav.azurecr.io/build-service/tanzu-java-web-app-source'
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 
